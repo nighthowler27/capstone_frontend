@@ -41,8 +41,12 @@ export default async function handler(req, res) {
 
     const session = await stripe.checkout.sessions.create({
         line_items,
-        mode: 'payment',
+        mode: 'payment,',
         customer_email: email,
+        shipping_options: [
+            { shipping_rate: 'shr_1NBAJSKnJAn16Vl9Dur3oSFa' },
+            { shipping_rate: 'shr_1NBAKQKnJAn16Vl9wYLt8WxR' },
+          ],
         success_url: process.env.PUBLIC_URL + '/cart?success=1',
         cancel_url: process.env.PUBLIC_URL + '/cart?canceled=1',
         metadata: { orderId: orderDoc._id.toString(), test: 'ok' },
