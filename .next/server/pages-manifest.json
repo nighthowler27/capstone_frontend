@@ -3,8 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/cart": "pages/cart.js",
-  "/": "pages/index.js",
-  "/products": "pages/products.js",
-  "/categories": "pages/categories.js",
-  "/newArrival": "pages/newArrival.js"
+  "/": "pages/index.js"
 }

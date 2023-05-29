@@ -79,7 +79,7 @@ export default function Featured({product}) {
             </div>
           </Column>
           <Column>
-            <img src="https://capstone-next-ecommerce.s3.amazonaws.com/1685251119266.png" alt=""/>
+            <img src="https://capstone-next-ecommerce.s3.amazonaws.com/1685294995108.png" alt=""/>
           </Column>
         </ColumnsWrapper>
       </Center>
